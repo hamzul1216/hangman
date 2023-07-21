@@ -9,6 +9,7 @@ end_of_game = False
 lives = 6
 
 print(hangman_art.logo)
+print("-----------------------------------------------")
 
 #Testing code
 # print(f'Pssst, the solution is {chosen_word}.')
@@ -17,6 +18,9 @@ print(hangman_art.logo)
 display = []
 for _ in range(word_length):
     display += "_"
+
+print(f"Guess the word chosen by the computer: \n{display}")
+print("-----------------------------------------------")
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
